@@ -1,0 +1,121 @@
+body{
+
+	margin:0;
+	padding:0;
+	border:0;
+	height:100%;
+	width:100%;
+	background:url("../images/lumière.gif")no-repeat center center fixed;
+	background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.début-de-texte {
+
+    font-size: 300%;
+    color: #60DDFF;
+    opacity: 0;
+    animation-delay: 2s;
+    animation-duration: 4s;
+    animation-name: début-de-texte;
+    animation-timing-function: ease-out;
+}
+
+@keyframes début-de-texte {
+
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.défilement-texte {
+
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 50%;
+    margin: 0 0 0 -25%;
+    top: auto;
+    bottom: 0;
+    height: 50em;
+    
+    color: #ffff66;    
+    font-size: 200%;
+    text-align: justify;
+    transform-origin: center bottom;
+    transform: perspective(450px) rotateX(20deg);
+}
+
+.défilement-texte div {
+
+    position: absolute;
+    top: 100%; 
+    animation-delay: 6s;
+    animation-duration: 45s;
+    animation-name: défilement-texte;
+    animation-timing-function: linear;
+}
+
+@keyframes défilement-texte {
+
+    0% {
+        top: 100%;
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 0;
+        opacity: 0;
+    }
+}
+
+.musique {
+
+    position: absolute;
+    top: 1%;
+    left: 0%;
+}	
+
+button {
+    display: none;
+	position: absolute;
+	top: 41%;
+	left: 39%;
+	box-shadow:inset 0px 0px 23px 1px #7c71a6;
+	background:linear-gradient(to bottom, #000000 5%, #4128bd 100%);
+	background-color:#000000;
+	border-radius:20px;
+	border:3px solid #3beff5;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Times New Roman;
+	font-size:20px;
+	font-weight:bold;
+	padding:12px 26px;
+	text-decoration:none;
+	text-shadow:0px 0px 50px #000000;
+}
+button:hover {
+	
+	background:linear-gradient(to bottom, #4128bd 5%, #000000 100%);
+	background-color:#4128bd;
+}
