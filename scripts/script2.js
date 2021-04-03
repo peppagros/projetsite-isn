@@ -1,7 +1,7 @@
 function laréponse(){
     var réponse = prompt("J'ai toujours eu des problèmes gastriques, un ulcère probablement...");
   if (réponse=="Saturne") {
-    return document.location.href='Page3.html';
+    return document.location.href='page3.html';
   }
 }
 
